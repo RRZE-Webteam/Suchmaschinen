@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>UnivIS Personensuche</ShortName>
+    <Description>Suche nach Personen in UnivIS (FAU)</Description>
+    <Language>de-de</Language>
+    <OutputEncoding>UTF-8</OutputEncoding>
+    <InputEncoding>UTF-8</InputEncoding>
+    <Tags>UnivIS Person</Tags>
+    <Contact>webmaster@fau.de</Contact>
+    <Url type="text/html" 
+    template="http://univis.uni-erlangen.de/prg?fullname={searchTerms}&amp;search=persons" />
+    <Image height="64" width="64" type="image/png">http://cgi.xwolf.de/test/univis-icon-64x64.png</Image>
+        <Url type="application/opensearchdescription+xml"
+     rel="self"
+     template="http://cgi.xwolf.de/test/UnivISPerson.xml" />
+</OpenSearchDescription>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Suchmaschinen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <script type="text/javascript">
+            var domain = 'http://cgi.xwolf.de/test/';
+            function installUnivISPerson() { 
+                if (window.external && ("AddSearchProvider" in window.external)) {   
+                    window.external.AddSearchProvider(domain + "UnivISPerson.xml");
+                } else {   
+                    alert("Ihr Browser besitzt keine Unterstützung für Suchanbieter"); 
+                }
+            }
+            function installUnivISEinrichtung() { 
+                if (window.external && ("AddSearchProvider" in window.external)) {   
+                    window.external.AddSearchProvider(domain + "UnivISEinrichtung.xml");
+                } else {   
+                    alert("Ihr Browser besitzt keine Unterstützung für Suchanbieter"); 
+                }
+            }
+            function installUnivISTelefon() { 
+                if (window.external && ("AddSearchProvider" in window.external)) {   
+                    window.external.AddSearchProvider(domain + "UnivISTelefon.xml");
+                } else {   
+                    alert("Ihr Browser besitzt keine Unterstützung für Suchanbieter"); 
+                }
+            }
+           
+        </script>
+        <h1>Suchmaschinen Plugins</h1>
+        <p>Suchmaschinen mit dem OpenSearch Beschreibungsformat für Such-Plugins. </p>
+        <p>Hintergrund und Beispiele: 
+            <ul><li><a href="https://developer.mozilla.org/de/docs/OpenSearch_Plugin_f%C3%BCr_Firefox_erstellen">OpenSearch Plugin für Firefox erstellen</a></li>
+                <li><a href="http://www.opensearch.org/Home">opensearch.org</a></li>
+            </ul>
+            
+        <h2>Plugins</h2>
+        <ul>
+            <li><a href="DefaultSample.xml">DefaultSample.xml</a> </li>
+            <li><a href="OpenSearchExampleFull.xml">OpenSearchExampleSimple.xml</a></li>
+            <li><a href="OpenSearchExampleFull.xml">OpenSearchExampleFull.xml</a> </li>
+            <li><a href="UnivISPerson.xml">UnivISPerson.xml</a>  (<button onclick="installUnivISPerson();">Zur Browsersuche hinzufügen</button>)</li>
+            <li><a href="UnivISEinrichtung.xml">UnivISEinrichtung.xml</a>  (<button onclick="installUnivISEinrichtung();">Zur Browsersuche hinzufügen</button>)</li>
+            <li><a href="UnivISTelefon.xml">UnivISTelefon.xml</a>  (<button onclick="installUnivISTelefon();">Zur Browsersuche hinzufügen</button>)</li>
+           
+        </ul>
+            
+    </body>
+</html>
