@@ -9,10 +9,10 @@
     <Contact>webmaster@fau.de</Contact>
     <Url type="text/html" 
     template="http://univis.uni-erlangen.de/prg?fullname={searchTerms}&amp;search=departments" />
-    <Image height="64" width="64" type="image/png">http://cgi.xwolf.de/test/univis-icon-64x64.png</Image>
+    <Image height="64" width="64" type="image/png">https://www.downloads.rrze.fau.de/webteam/Suchmaschinen/univis-icon-64x64.png</Image>
     
     <Url type="application/opensearchdescription+xml"
      rel="self"
-     template="http://cgi.xwolf.de/test/UnivISEinrichtung.xml" />
+     template="https://www.downloads.rrze.fau.de/webteam/Suchmaschinen/UnivISEinrichtung.xml" />
     
 </OpenSearchDescription>
